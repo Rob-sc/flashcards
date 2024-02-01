@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom/client'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
-const Saludo = (text) => {
+const Saludo = (props) => {
   return (
-    <h1> {text} </h1>
+    <h1> {props.text} </h1>
   )
 }
 
