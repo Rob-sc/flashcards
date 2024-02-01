@@ -1,11 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-    <h1>Holi mundo</h1>
-  </React.StrictMode>,
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+
+const Saludo = ({text}) => {
+  return (
+    <h1> {text} </h1>
+  )
+}
+
+
+root.render(
+<React.Fragment>
+  <Saludo  text="Hola Mundo"/>
+</React.Fragment>
 )
