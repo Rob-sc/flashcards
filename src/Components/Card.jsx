@@ -2,4 +2,4 @@ function Card() {
     return(<div> Card </div>)
 }
 
-export default App;
+export default Card;
