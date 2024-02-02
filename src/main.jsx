@@ -7,13 +7,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 const Saludo = (props) => {
   return (
-    <h1> {props.text} </h1>
+    <button> {props.text} </button>
   )
 }
 
 
 root.render(
-<React.Fragment>
-  <Saludo  text="Hola Mundo"/>
-</React.Fragment>
+  <>
+    <Saludo text='Botonazo' />
+  </>
 )
